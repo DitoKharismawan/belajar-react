@@ -3,12 +3,15 @@ import ReactDom from "react-dom";
 
 const name = "Angela";
 const number = 7;
+const currentDate = new Date();
+const year = currentDate.getFullYear();
 
 ReactDom.render(
   <div>
     <h1>Hello {name}!</h1>
-    <p>Your lucky number is {number} </p>
+    <p> Copyright {year} </p>
       
    </div>,
    document.getElementById("root")
    );
+export default name;
